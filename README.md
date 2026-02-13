@@ -9,6 +9,9 @@ This repository contains basic Python programs for practice and learning.
 - Even or Odd
 - Palindrome
 - Prime Number
+- largest of three
+- simple calculator
+- 
 
 ## Purpose
 
