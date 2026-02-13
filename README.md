@@ -11,7 +11,7 @@ This repository contains basic Python programs for practice and learning.
 - Prime Number
 - largest of three
 - simple calculator
-- 
+- sum of digits 
 
 ## Purpose
 
