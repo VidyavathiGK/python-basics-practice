@@ -13,6 +13,13 @@ This repository contains a curated collection of beginner-friendly Python progra
 * **Sum of Digits** (`sum_of_digits.py`) - Calculates the sum of individual digits in an integer.
 * **Reverse Number** (`Reverse Number.py`) - Reverses the digits of a given integer.
 * **Palindrome** (`palindrome.py`) - Checks if a string or number reads the same forwards and backwards.
+* **Base Converter** (`base_converter.py`) - Converts decimal numbers into binary, octal, and hexadecimal formats.
+* **Temperature Converter** (`temperature_converter.py`) - Adds temperature conversion functionality.
+* **Dice Roller** (`dice_roller.py`) - Adds dice roller simulator functionality.
+* **FizzBuzz** (`fizz_buzz.py`) - Implements the classic FizzBuzz function.
+* **Number Guessing Game** (`guess_the_number.py`) - Implements an interactive number guessing game.
+* **Word Frequency** (`word_frequency.py`) - Counts word frequencies in a given text.
+* **File Word Counter** (`file_word_counter.py`) - Adds text file analysis function.
 
 ### Number Property Checkers
 * **Prime Number** (`prime_number.py`) - Determines if a number has no positive divisors other than 1 and itself.
@@ -21,13 +28,23 @@ This repository contains a curated collection of beginner-friendly Python progra
 * **Perfect Number** (`Perfect Number.py`) - Determines if a number is equal to the sum of its proper positive divisors.
 * **Strong Number** (`Strong Number.py`) - Checks if the sum of the factorials of digits equals the original number.
 
-### Object-Oriented Programming (OOP) Practice
+### Algorithms & Data Structures
+* **Merge Sort** (`merge_sort.py`) - Implements the merge sort algorithm.
+* **Quick Sort** (`quick_sort.py`) - Implements the quick sort algorithm.
+* **Matrix Addition** (`matrix_addition.py`) - Implements matrix addition functionality.
+
+### Object-Oriented Programming (OOP) & Practical Applications
 * **Bank Account** (`bank_account.py`) - Simulates basic banking operations like deposits, withdrawals, and balance checks.
 * **Bank Management System** (`bank_management_system.py`) - Extended banking logic supporting multiple account types.
-* **Library Book** (`library_book.py`) - Implements a `Book` class with checkout and return functionalities.
-* **Music Playlist** (`music_playlist.py`) - Implements a `Playlist` class for adding, removing, and managing songs.
-* **Pet Simulator** (`pet_simulator.py`) - Interactive `Pet` class demonstrating state management and adoption features.
+* **Library Book** (`library_book.py`) - Implements a Book class with checkout and return functionalities.
+* **Music Playlist** (`music_playlist.py`) - Implements a Playlist class for adding, removing, and managing songs.
+* **Pet Simulator** (`pet_simulator.py`) - Interactive Pet class demonstrating state management and adoption features.
 * **Smart Bulb** (`smart_bulb.py`) - Simulates smart home device controls (power states, brightness adjustments).
+* **Contact Book** (`contact_book.py`) - Manages contacts with interactive choices.
+* **To-Do List** (`todo_list.py`) - Implements a basic To-Do list manager.
+* **Note Manager** (`note_manager.py`) - Implements note management functionality.
+* **Flashcard Quiz** (`flashcard_quiz.py`) - Implements Flashcard and FlashcardQuiz classes.
+* **Password Generator** (`password_generator.py`) - Adds a password generator script.
 
 ## Purpose
 
