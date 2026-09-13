@@ -9,6 +9,6 @@ while square > 0:
     square //= 10
 
 if total == n:
-    print("Neon number")
+    print("Neon Number")
 else:
-    print("Not a Neon number")
+    print("Not a Neon Number")
