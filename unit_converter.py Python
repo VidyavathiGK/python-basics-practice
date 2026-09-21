@@ -1,0 +1,109 @@
+"""
+Unit Converter Utility
+----------------------
+A comprehensive command-line tool to convert units across multiple categories:
+Length, Weight, and Temperature. Designed following clean coding practices.
+"""
+
+def convert_length(value, from_unit, to_unit):
+    """Converts length units: meters, kilometers, centimeters, miles, inches."""
+    # Convert everything to meters first
+    to_meters = {
+        "m": 1.0,
+        "km": 1000.0,
+        "cm": 0.01,
+        "mi": 1609.34,
+        "in": 0.0254
+    }
+    
+    if from_unit not in to_meters or to_unit not in to_meters:
+        raise ValueError("Invalid length unit specified.")
+        
+    value_in_meters = value * to_meters[from_unit]
+    return value_in_meters / to_meters[to_unit]
+
+
+def convert_weight(value, from_unit, to_unit):
+    """Converts weight units: kilograms, grams, pounds, ounces."""
+    # Convert everything to kilograms first
+    to_kg = {
+        "kg": 1.0,
+        "g": 0.001,
+        "lb": 0.453592,
+        "oz": 0.0283495
+    }
+    
+    if from_unit not in to_kg or to_unit not in to_kg:
+        raise ValueError("Invalid weight unit specified.")
+        
+    value_in_kg = value * to_kg[from_unit]
+    return value_in_kg / to_kg[to_unit]
+
+
+def convert_temperature(value, from_unit, to_unit):
+    """Converts temperature units: Celsius, Fahrenheit, Kelvin."""
+    from_unit = from_unit.upper()
+    to_unit = to_unit.upper()
+    
+    # Convert to Celsius first
+    if from_unit == "C":
+        celsius = value
+    elif from_unit == "F":
+        celsius = (value - 32) * 5 / 9
+    elif from_unit == "K":
+        celsius = value - 273.15
+    else:
+        raise ValueError("Invalid temperature unit.")
+        
+    # Convert from Celsius to target unit
+    if to_unit == "C":
+        return celsius
+    elif to_unit == "F":
+        return (celsius * 9 / 5) + 32
+    elif to_unit == "K":
+        return celsius + 273.15
+    else:
+        raise ValueError("Invalid temperature unit.")
+
+
+def main():
+    print("==============================")
+    print("      ADVANCED UNIT CONVERTER ")
+    print("==============================")
+    print("1. Length (m, km, cm, mi, in)")
+    print("2. Weight (kg, g, lb, oz)")
+    print("3. Temperature (C, F, K)")
+    
+    choice = input("\nSelect category (1-3): ").strip()
+    
+    try:
+        if choice == "1":
+            val = float(input("Enter value: "))
+            frm = input("From unit (m, km, cm, mi, in): ").strip().lower()
+            to = input("To unit (m, km, cm, mi, in): ").strip().lower()
+            res = convert_length(val, frm, to)
+            print(f"\nResult: {val} {frm} = {res:.4f} {to}")
+            
+        elif choice == "2":
+            val = float(input("Enter value: "))
+            frm = input("From unit (kg, g, lb, oz): ").strip().lower()
+            to = input("To unit (kg, g, lb, oz): ").strip().lower()
+            res = convert_weight(val, frm, to)
+            print(f"\nResult: {val} {frm} = {res:.4f} {to}")
+            
+        elif choice == "3":
+            val = float(input("Enter value: "))
+            frm = input("From unit (C, F, K): ").strip().upper()
+            to = input("To unit (C, F, K): ").strip().upper()
+            res = convert_temperature(val, frm, to)
+            print(f"\nResult: {val} {frm} = {res:.2f} {to}")
+            
+        else:
+            print("Invalid category selection.")
+            
+    except ValueError as e:
+        print(f"Error: {e}")
+
+
+if __name__ == "__main__":
+    main()
