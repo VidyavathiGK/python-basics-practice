@@ -45,11 +45,13 @@ This repository contains a curated collection of beginner-friendly Python progra
 * **Note Manager** (`note_manager.py`) - Implements note management functionality.
 * **Flashcard Quiz** (`flashcard_quiz.py`) - Implements Flashcard and FlashcardQuiz classes.
 * **Password Generator** (`password_generator.py`) - Adds a password generator script.
+* **Weather Dashboard CLI** (`weather_cli.py`) - Fetches and displays live weather forecasts via public APIs.
+* **File Organizer** (`file_organizer.py`) - Automatically categorizes and sorts files into subfolders based on extension type.
+* **Pomodoro Timer** (`pomodoro_timer.py`) - Manages work and break productivity intervals with live countdowns.
+* **Secure Password Vault** (`secure_vault.py`) - Encrypts and securely stores credentials in a local SQLite database.
 
 ## Purpose
-
 I created this repository to build a strong foundation in Python programming, practice clean coding habits, explore object-oriented design principles, and maintain consistency in daily coding practice.
 
 ## License
-
 This project is open source and available under the terms of the [MIT License](LICENSE).
