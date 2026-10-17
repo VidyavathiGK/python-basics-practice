@@ -1,3 +1,4 @@
+# updated code
 class CSVParser:
     def __init__(self, csv_string):
         lines = csv_string.strip().split("\n")
@@ -20,6 +21,6 @@ if __name__ == "__main__":
     """
     parser = CSVParser(data)
     developers = parser.filter_by("role", "Developer")
-    print("\n--- Filtered Developers ---")
+    print("\n--- Filtered Developers --- ")
     for dev in developers:
         print(dev["name"])
